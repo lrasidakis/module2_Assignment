@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;  
+    margin:0;
+    padding:20;
+}
+
+
+h1 {
+  font-size:300%;
+  text-align:center;
+  padding:20px 0px 40px 0px;
+  margin:0;
+}
+body{margin:8px;}
+
+
+#Beef {
+background-color:yellow;
+}
+
+#Chicken {
+background-color:green;
+}
+
+#Fish {
+background-color:orange;
+}
+
+.floating-box {
+    position:relative;
+    float: left;
+    width: 32%;
+    margin:0px 5px 0px 5px;
+    border: 2px solid black;
+    padding: 25px 4px 4px 4px;
+    background-color:gray;
+}
+
+.absolute {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid black;
+    padding:2px 10px 2px 10px ;
+
+}
+
+@media (min-width: 776px) and (max-width: 995px) {
+#box1 {
+    float: left;
+    width: 48%;
+    margin:0px 5px 10px 5px;
+}
+#box2 {
+    float: left;
+    width: 48%;
+    margin:0px 5px 10px 5px;
+}
+#box3 {
+    clear: both;
+    width: 97%;
+    margin:0px 5px 0px 5px;
+}
+}
+
+@media (max-width: 775px) {
+
+
+.floating-box {
+    clear: both;
+    width: 100%;
+    margin:auto;
+    margin-top: 10px;
+    border: 2px solid black;
+}
+
+

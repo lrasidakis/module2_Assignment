@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;  
-    margin:0;
-    padding:20;
+    font-family: cursive;
 }
 
 
@@ -10,81 +9,112 @@ h1 {
   text-align:center;
   padding:20px 0px 40px 0px;
   margin:0;
-  font-family: cursive;
+
 }
 
-
-body{margin:8px;}
-
+body{
+    margin:8px;
+}
 
 #Beef {
-font-family: cursive;
 background-color:yellow;
 }
 
 #Chicken {
-font-family: cursive;
 background-color:green;
 }
 
 #Fish {
-font-family: cursive;
+
 background-color:orange;
 }
 
-.floating-box {
-    position:relative;
-    float: left;
-    width: 32%;
-    margin:0px 5px 0px 5px;
+
+.floating-box{
+    position: relative;
+    background-color: gray;
+    padding: 40px 5px 5px 5px;
     border: 1px solid black;
-    padding: 25px 4px 4px 4px;
-    background-color:gray;
 }
 
-.absolute {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    border: 1px solid black;
-    padding:0px 10px 0px 10px ;
-
+.absolute{
+    position:absolute;
+    top:0px;
+    right:0px;
+    padding: 5px 10px 5px 10px;
+    border:1px solid black  ;
+    font-weight: bold; 
+    font-size: 1.1em;
 }
 
 @media (min-width: 992px) {
-.floating-box {
-    float: left;
-    width: 32%;
-    margin:0px 5px 0px 5px;
-    }
+.tile1{
+    width: 33.33%;
+    float:left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.tile2{
+    width: 33.33%;
+    float:left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.tile3{
+    width: 33.33%;
+    float:left;
+    padding-right:15px;
+    padding-left: 15px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-#box1 {
-    float: left;
-    width: 48%;
-    margin:0px 5px 10px 5px;
+.tile1{
+    width: 50%;
+    float:left;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-#box2 {
-    float: left;
-    width: 48%;
-    margin:0px 5px 10px 5px;
+
+.tile2{
+    width: 50%;
+    float:left;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-#box3 {
+
+.tile3{
     clear: both;
-    width: 97%;
-    margin:0px 5px 0px 5px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
 }
 }
 
 @media (max-width: 767px) {
-
-
-.floating-box {
-    clear: both;
+.tile1{
     width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 30px;
     margin:auto;
     margin-top: 10px;
 }
 
+.tile2{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+}
+
+.tile3{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+}
 
